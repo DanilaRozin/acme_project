@@ -6,8 +6,8 @@ from .utils import calculated_birthday_countdown
 
 
 def birthday(request):
-    print(request.GET)
-    form = BirthdayForm(request.GET or None)
+    print(request.POST)
+    form = BirthdayForm(request.POST or None)
     context = {'form': form}
     if form.is_valid():
         birthday_countdown = calculated_birthday_countdown(
