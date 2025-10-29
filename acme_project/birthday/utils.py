@@ -18,6 +18,7 @@ def calculated_birthday_countdown(birthday):
     birthday_countdown = (next_birthday - today).days
     return birthday_countdown
 
+
 def get_birthday_for_year(birthday, year):
     """
     Получает дату дня рождения для конкретного года.
