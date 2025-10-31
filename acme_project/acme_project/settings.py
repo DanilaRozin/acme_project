@@ -59,6 +59,10 @@ DATABASES = {
     }
 }
 
+MEDIA_ROOT = BASE_DIR/ 'media'
+
+#MEDIA_URL = 'media/'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
