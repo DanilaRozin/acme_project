@@ -26,6 +26,7 @@ def birthday(request, pk=None):
         context.update({'birthday_countdown': birthday_countdown})
     return render(request, 'birthday/birthday.html', context=context)
 
+
 class BirthdayListView(ListView):
     model = Birthday
     ordering = 'id'
